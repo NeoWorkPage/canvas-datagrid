@@ -40,7 +40,10 @@ class GenerateRandomDataButton extends React.Component {
     render() {
         return React.createElement('div', {
                 style: {
-                    height: '300px'
+                    height: '300px',
+                    position: 'relative',
+                    marginLeft: 40,
+                    marginTop: 40,
                 }
             },
             React.createElement(CanvasDatagrid, {
@@ -60,7 +63,35 @@ function getRandomData() {
         foo: Math.random(),
         bar: Math.random(),
         baz: Math.random()
-    }];
+    },{
+        foo: Math.random(),
+        bar: Math.random(),
+        baz: Math.random()
+    },{
+        foo: Math.random(),
+        bar: Math.random(),
+        baz: Math.random()
+    },{
+        foo: Math.random(),
+        bar: Math.random(),
+        baz: Math.random()
+    },{
+        foo: Math.random(),
+        bar: Math.random(),
+        baz: Math.random()
+    },{
+        foo: Math.random(),
+        bar: Math.random(),
+        baz: Math.random()
+    },{
+        foo: Math.random(),
+        bar: Math.random(),
+        baz: Math.random()
+    },{
+        foo: Math.random(),
+        bar: Math.random(),
+        baz: Math.random()
+    },];
 }
 var grid = React.createElement(GenerateRandomDataButton, {});
 ReactDOM.render(grid, document.getElementById('root'));
